@@ -20,11 +20,11 @@ export default function Hero() {
       duration: 0.4,
       opacity: 0,
       scale:0,
-      delay:.9,
+      delay:1,
     });
 
 }, []);
-  let HM=" Junior Frontend Developer"
+  let HM=" Junior- FrontEnd- Developer"
 let characterHM=HM.split("")
   return (
     <section className="
@@ -46,31 +46,32 @@ let characterHM=HM.split("")
     </h1>
 
     <div className="mt-4 flex flex-wrap justify-center md:justify-start">
+      
+      
+      
       {characterHM.map((el, index) => (
-       <div key={index} id='CH' style={{display:'inline-block'}}>
-
-       <span
-          key={index}
-          className="
-            inline-block
-            text-base sm:text-sm md:text-lg
-            font-medium
-            text-gray-200
-            mx-[1px]
-            px-1
-            backdrop-blur-sm
-            bg-white/10
-            shadow-sm
-            transition-all
-            duration-300
-            hover:text-cyan-400
-            hover:bg-cyan-400/20
-            hover:-translate-y-1
-            hover:shadow-cyan-400/40
-          "
-        >
-          {el}
-        </span>
+       <div key={index} id='CH' style={{display:'inline-block',}}>
+            
+        <span
+            key={index}
+            className="
+              inline-block
+              text-base md:text-xl
+              font-larger
+              
+              bg-blue
+            px-1%
+              bg-white/20 
+              transition-all
+              duration-300
+              hover:text-cyan-400
+              hover:bg-cyan-400/20
+              hover:-translate-y-1
+              hover:shadow-cyan-400/40
+            "
+          >
+            {el}
+          </span>
         </div>
       ))}
     </div>
