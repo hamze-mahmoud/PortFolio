@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         
-        <h1 className="  text-lg"    id='ii' style={{cursor:'pointer'}}>
+        <h1 className=" text-gray-300 text-lg"    id='ii' style={{cursor:'pointer'}}>
         <Link to="/">
      
           Hamze

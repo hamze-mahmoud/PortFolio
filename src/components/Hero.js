@@ -24,74 +24,77 @@ export default function Hero() {
     });
 
 }, []);
-  let HM=" Junior Frontend Developer • React"
+  let HM=" Junior Frontend Developer"
 let characterHM=HM.split("")
-
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-    
+    <section className="
+  min-h-screen
+  flex flex-col-reverse md:flex-row
+  items-center
+  justify-center
+  gap-10
+  px-6
+  bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900
+">
+  {/* ================= TEXT ================= */}
+  <div className="text-center md:text-left max-w-xl">
+    <h1
+      ref={titleRef}
+      className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-400"
+    >
+      Hamze Montaser Naeem Mahmoud
+    </h1>
 
+    <div className="mt-4 flex flex-wrap justify-center md:justify-start">
+      {characterHM.map((el, index) => (
+       <div key={index} id='CH' style={{display:'inline-block'}}>
 
-
-    
-    
-    
-      <div className="text-center px-4">
-        <h1
-          ref={titleRef}
-          className="text-4xl md:text-5xl font-bold text-cyan-400"
+       <span
+          key={index}
+          className="
+            inline-block
+            text-base sm:text-sm md:text-lg
+            font-medium
+            text-gray-200
+            mx-[1px]
+            px-1
+            backdrop-blur-sm
+            bg-white/10
+            shadow-sm
+            transition-all
+            duration-300
+            hover:text-cyan-400
+            hover:bg-cyan-400/20
+            hover:-translate-y-1
+            hover:shadow-cyan-400/40
+          "
         >
-          Hamze Montaser Naeem Mahmoud
-        </h1>
+          {el}
+        </span>
+        </div>
+      ))}
+    </div>
+  </div>
 
-        <div>
-
-{characterHM.map((el, index) =>
-<div key={index} id='CH' style={{display:'inline-block'}}>
-<span
-  className="
-    inline-block
-    text-lg md:text-xl
-    font-medium
-    text-gray-200
-    mx-[1px]
-    px-1
-    backdrop-blur-sm
-    bg-white/5
-    shadow-sm
-    transition-all
-    duration-300
-    ease-out
-    hover:text-cyan-400
-    hover:bg-cyan-400/10
-    hover:border-cyan-400/30
-    hover:-translate-y-[2px]
-    hover:shadow-cyan-400/30
-  "
->
-  {el}
-</span>
-
-</div>
-)}
-
-</div>
-      </div>
-      <img
-      src={image} // your imported image
-      alt="Background"
-      className="
-        w-80 md:w-96  /* width */
-        h-80 md:h-96  /* height */
-        object-cover object-center
-        rounded-3xl       /* rounded corners */
-        shadow-2xl        /* subtle shadow */
-        brightness-90      /* slightly darken image */
-          srcSet={`${image} 1x, ${highResImage} 2x`}
-
-      "
+  {/* ================= IMAGE ================= */}
+  <div className="flex justify-center">
+    <img
+      src={image}
+      alt="Hamze"
       loading="lazy"
+      className="
+        w-56 h-56
+        sm:w-72 sm:h-72
+        md:w-96 md:h-96
+        object-cover
+        object-center
+        rounded-3xl
+        shadow-2xl
+        brightness-90
+      "
     />
-    </section>
+  </div>
+</section>
+
   );
 }
