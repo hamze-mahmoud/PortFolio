@@ -37,9 +37,9 @@ export default function About() {
       </h2>
 
       <p className="text-slate-300 leading-relaxed text-center max-w-3xl mx-auto">
-  I’m <span className="text-slate-100 font-medium">Hamze Montaser Naeem Mahmoud</span>, 
+      I’m <span className="text-slate-100 font-medium">Hamze Montaser Naeem Mahmoud</span>, 
   a React-focused frontend developer passionate about building modern, performant
-  interfaces. I specialize in clean architecture, smooth animations, and crafting
+  interfaces. I specialize in clean and crafting
   user experiences that feel intuitive, fast, and visually balanced.
 </p>
 
