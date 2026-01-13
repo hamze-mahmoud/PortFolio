@@ -38,7 +38,7 @@ export default function About() {
 
       <p className="text-slate-300 leading-relaxed text-center max-w-3xl mx-auto">
       I’m <span className="text-slate-100 font-medium">Hamze Montaser Naeem Mahmoud</span>,
-a Junior Full Stack Developer passionate about building modern, performant web applications.
+a Junior  Front End Developer passionate about building modern, performant web applications.
 I enjoy working across both frontend and backend, crafting clean, scalable code and creating user experiences that feel intuitive, fast, and visually balanced.
 </p>
 

@@ -7,11 +7,13 @@ import { gsap } from "gsap";
     const sectionRef = useRef(null);
 
     const skills = [
-    "React",
+    "HTML & CSS",
     "JavaScript",
+    "React",
+    "redux",
+    "react query",
     "Tailwind CSS",
     "GSAP",
-    "HTML & CSS",
     "Performance Optimization",
     "nodeJs",
     "express js",
