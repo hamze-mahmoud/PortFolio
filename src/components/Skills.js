@@ -8,16 +8,18 @@ import { gsap } from "gsap";
 
     const skills = [
     "HTML & CSS",
+    "Tailwind CSS",
+    "GSAP",
     "JavaScript",
     "React",
     "redux",
     "react query",
-    "Tailwind CSS",
-    "GSAP",
     "Performance Optimization",
     "nodeJs",
     "express js",
-    "fast api",
+    "OOP",
+    "problem solving",
+    "linux admin 1"
   ];
   useGSAP(
     () => {
